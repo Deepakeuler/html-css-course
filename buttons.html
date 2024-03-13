@@ -13,9 +13,34 @@
     border-radius: 2px;
     cursor: pointer;
     margin-right: 8px;
+    transition: opacity 0.15s;
   } 
 
   /* in CSS space is called margin --> to add space we need to add margin */
+
+  /* adding hover properties like button gets darker,lighter or with shadow effect */
+  /* :hover is called pseudo-class which basically adds extra styles in certain situation */
+  /* opacity: -> to fade out an element */
+  /* transition are not added in pseudo class because they are applied only when we are hovering in and not in hovering out */
+  .subscribe-button:hover{
+    /* background-color: green; */
+    opacity: 0.8;
+  }
+
+  /* :acrive --> activates click on the button */
+  .subscribe-button:active{
+    /* background-color: blue; */
+    opacity: 0.4;
+  }
+
+  .join-button:hover{
+    background-color: rgb(41, 118, 211);
+    color: white;
+  }
+
+  .join-button:active{
+    opacity: 0.7;
+  }
 
   .join-button{
     background-color: white;
@@ -27,7 +52,10 @@
     width: 62px;
     border-radius: 2px;
     cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
   }
+
+  /* rgba -> in this a is hover */
 
   .tweet-button{
     background-color: rgb(2, 158, 255);
@@ -40,6 +68,11 @@
     font-size: 15px;
     cursor: pointer;
     margin-left: 8px;
+    transition: box-shadow 0.15s;
+  }
+
+  .tweet-button:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
   }
 </style>
 
