@@ -14,15 +14,37 @@
   Free delivery tomorrow.
 </p>
 
+
+<button class="addToCart-button">
+  Add to Cart
+</button>
+
+<button class="buyNow-button">
+  Buy now
+</button>
+
 <style>
 
   .backToAmazon-button{
     color: rgb(0, 113, 113);
   }
 
+  .backToAmazon-button:hover{
+    color: green;
+  }
+
   .priceAndStcok-status{
     color: rgb(0, 118, 0);
   }
+
+  .addToCart-button:hover{
+    background-color: rgb(193, 161, 0);
+  }
+
+  .addToCart-button:active{
+    opacity: 0.3;
+  }
+
   .addToCart-button{
     background-color: rgb(255, 216, 20);
     border-radius: 20px;
@@ -33,7 +55,9 @@
     cursor: pointer;
     font-weight: bold;
     font-size: 13px;
-    margin-right: 8px;
+    margin-right: 16px;
+    transition: opacity 0.15s;
+    transition: background-color 0.15s;
   }
 
   .buyNow-button{
@@ -47,13 +71,10 @@
     font-weight: bold;
     font-size: 13px;
     margin-right: 8px;
+    transition: opacity 0.15s;
+  }
+
+  .buyNow-button:active{
+    opacity: 0.8;
   }
 </style>
-
-<button class="addToCart-button">
-  Add to Cart
-</button>
-
-<button class="buyNow-button">
-  Buy now
-</button>
