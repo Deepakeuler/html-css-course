@@ -1,44 +1,80 @@
-<!-- <p> anything that comes up within arrowed brackets
-    like <p></p> these both implies opening tag and a 
-    closing tag and in tag you define what you want to 
-    render let it be a button paragraph </p> -->
+<a href="https://www.Amazon.com" target="_blank" class="backToAmazon-button">
+  Back to Amazon
+</a>
+
+<p style="font-weight: bold;">
+  Nike Black Running Shoes
+</p>
+
+<p class="priceAndStcok-status">
+  $39 - in stock.
+</p>
+
+<p>
+  Free delivery tomorrow.
+</p>
 
 
-    <button>
-      Hello
-    </button> <!--button tag-->
-    
-    <p>
-      Paragraph of texts
-    </p><!-- paragraph tag-->
-    
-    <a>
-      Link to Youtube
-    </a>        <!-- anchor tag -- 
-        link to another website - links address is not given yet-->
-    
-    <a href="https://www.youtube.com/">
-      Link to Youtube
-    </a> <!-- Link is given-->
-    <!-- this link is called html attribute i.e how a element behaves -> 
-        above href is attribute name and right side is attribute value-->
-    
-                
-    <p>
-      new link for youtube to be opened in a new tab
-    </p>
-    
-    
-    <a href="https://www.youtube.com/"  target ="_blank">
-      Link to Youtube
-    </a>
-    <!-- we can also have multiple attributes like in above target tells 
-        whether to openin new tab or current tab
-        href and target attributes only work on Link elements -->
-    
-    <!-- extra spaces/new lines are ignored by html -->
-    
-    
-    <a href="https://leetcode.com" target="_blank"> 
-      Leetcode
-    </a>
+<button class="addToCart-button">
+  Add to Cart
+</button>
+
+<button class="buyNow-button">
+  Buy now
+</button>
+
+<style>
+
+  .backToAmazon-button{
+    color: rgb(0, 113, 113);
+  }
+
+  .backToAmazon-button:hover{
+    color: green;
+  }
+
+  .priceAndStcok-status{
+    color: rgb(0, 118, 0);
+  }
+
+  .addToCart-button:hover{
+    background-color: rgb(193, 161, 0);
+  }
+
+  .addToCart-button:active{
+    opacity: 0.3;
+  }
+
+  .addToCart-button{
+    background-color: rgb(255, 216, 20);
+    border-radius: 20px;
+    color: black;
+    height: 40px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 16px;
+    transition: opacity 0.15s;
+    transition: background-color 0.15s;
+  }
+
+  .buyNow-button{
+    background-color: rgb(255, 164, 28);
+    border-radius: 20px;
+    color: black;
+    height: 40px;
+    width: 100px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 13px;
+    margin-right: 8px;
+    transition: opacity 0.15s;
+  }
+
+  .buyNow-button:active{
+    opacity: 0.8;
+  }
+</style>
