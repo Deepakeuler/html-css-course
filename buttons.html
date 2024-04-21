@@ -1,95 +1,15 @@
-<!-- css is to style and appearance webpages -->
-<style>
-  .subscribe-button{
-    /* button --> it's css selector - whch part of our page we are targetting 
-    css property (what we are changing): property value (and to what) ;-> is a period
-    we can add multiple styles in a single bracket and styles are applied one by one*/
-    background-color: rgb(200, 0, 0);   
-    /* for text color only color not text color */
-    color: white;
-    border: none;    
-    border-radius: 2px;
-    cursor: pointer;
-    margin-right: 8px;
-    margin-left: 20px;
-    /* intitially we had set height and width of button because of which content in the button increases button
-    will try to force that content into that spcific area which may result spillage of content outside the button.
-    To remove this anomaly there is concept of padding, with which we set margin inside the button by which button
-    automatically sets it's size with content as we desire. So, padding is better alternative to height and width.
-    And border also adds area to the button we need to keep that in mind too */
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 16px;
-    padding-right: 16px;
-    transition: opacity 0.15s;
-    vertical-align: top;
-  } 
-
-  /* in CSS space is called margin --> to add space we need to add margin */
-
-  /* adding hover properties like button gets darker,lighter or with shadow effect */
-  /* :hover is called pseudo-class which basically adds extra styles in certain situation */
-  /* opacity: -> to fade out an element */
-  /* transition are not added in pseudo class because they are applied only when we are hovering in and not in hovering out */
-  .subscribe-button:hover{
-    /* background-color: green; */
-    opacity: 0.8;
-  }
-
-  /* :acrive --> activates click on the button */
-  .subscribe-button:active{
-    /* background-color: blue; */
-    opacity: 0.4;
-  }
-
-  .join-button:hover{
-    background-color: rgb(6, 95, 212);
-    color: white;
-  }
-
-  .join-button:active{
-    opacity: 0.7;
-  }
-
-  .join-button{
-    background-color: white;
-    border-color: rgb(6, 95, 212);
-    border-style: solid;
-    border-width: 1px;
-    color: rgb(41, 118, 211);
-    border-radius: 2px;
-    padding-top: 9px;
-    padding-bottom: 9px;
-    padding-left: 16px;
-    padding-right: 16px;
-    cursor: pointer;
-    transition: background-color 0.15s, color 0.15s;
-  }
-
-  /* rgba -> in this a is hover */
-
-  .tweet-button{
-    background-color: rgb(29, 155, 240);
-    color: white;
-    border: none;
-    height: 36px;
-    width: 74px;
-    border-radius: 18px;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
-    margin-left: 8px;
-    transition: box-shadow 0.15s;
-    vertical-align: top;
-  }
-
-  .tweet-button:hover{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
-  }
-</style>
-
-
-<!-- attributes modifies the behaviour of element, class attributes help us to label HTML attibutes -->
+<!DOCTYPE html>
+<!--This tells browser to use modern version of HTML-->
+<html>
+  <!--This tells that we have a web page inside html-->
+  <head>
+    <link rel="stylesheet" href="styles/buttons.css">
+  </head>
+  <body>
+    <title>
+      Buttons
+    </title>
+    <!-- attributes modifies the behaviour of element, class attributes help us to label HTML attibutes -->
 <button class="subscribe-button">  
   SUBSCRIBE
 </button>
@@ -101,3 +21,5 @@
 <button class="tweet-button">
   Tweet
 </button>
+  </body>
+</html>
