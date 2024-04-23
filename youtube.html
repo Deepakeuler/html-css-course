@@ -9,12 +9,17 @@
       }
 
       .search-bar{
-        font-size: 20px;
-        margin-left: 12px ;
+        display: block;
       }
 
       .video-title{
         width: 300px;
+      }
+
+      .video-preview{
+        width: 300px;
+        display: inline-block;
+        vertical-align: top;
       }
 
       .video-author,
@@ -27,31 +32,37 @@
   <body>
     <!--creating a search bar and putting a placeholder search-->
     <input class="search-bar" type="text" placeholder="search">
-    <!--image is also a void element which mean sit doesn't require a closing tag-->
-    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-    <!--unlike para, image and search bar appers on the same line(beside image) where para are on top of each other this is because of a block element - which takes up a entire line-->
-    <!--another is inline-block element which is image and input, take space as much required not entire line-->
-    <!--3rd is inline element whic exists within the line, like <strong>elemnt which makes word bold within line-->
-    <!--we use display in css to switch between block and inline block-->
-    <p class="video-title">
-      Talking Tech and AI with Google CEO Sundar Pichai!
-    </p>
-    <p class="video-author">
-      Marques Brownlee
-    </p>
-    <p class="video-stats">
-      3.4M views &#183; 6 months ago
-    </p>
-<<<<<<< HEAD
-
-    <div>
-      this is a div
+    <!--creating a container i.e basically a div-->
+    <div class="video-preview">
+      <!--image is also a void element which mean sit doesn't require a closing tag-->
+      <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+      <!--unlike para, image and search bar appers on the same line(beside image) where para are on top of each other this is because of a block element - which takes up a entire line-->
+      <!--another is inline-block element which is image and input, take space as much required not entire line-->
+      <!--3rd is inline element whic exists within the line, like <strong>elemnt which makes word bold within line-->
+      <!--we use display in css to switch between block and inline block-->
+      <p class="video-title">
+        Talking Tech and AI with Google CEO Sundar Pichai!
+      </p>
+      <p class="video-author">
+        Marques Brownlee
+      </p>
+      <p class="video-stats">
+        3.4M views &#183; 6 months ago
+      </p>
+    </div>
+    <div class="video-preview">
+      <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+      <p class="video-title">
+        Try Not To Laugh Challenge #9
+      </p>
+      <p class="video-author">
+        Markiplier
+      </p>
+      <p class="video-stats">
+        19M views &#183; 4 years ago
+      </p>
     </div>
   </body>
 </html>
 
 <!--div stand for division, which is basically a box-->
-=======
-  </body>
-</html>
->>>>>>> origin/image
