@@ -1,8 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     <title>YouTube.com clone</title>
     <style>
+
+      p{
+        font-family: Roboto, Arial;
+        margin-top: 0;
+        margin-bottom: 0;
+      }
       .thumbnail{
         width: 300px;
         display: block;
@@ -13,7 +22,11 @@
       }
 
       .video-title{
-        width: 300px;
+        margin-top: 0px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        margin-bottom: 12px;
       }
 
       .video-preview{
@@ -22,9 +35,33 @@
         vertical-align: top;
       }
 
-      .video-author,
-      .video-stats{
-        
+      .video-author, .video-stats{
+        font-size: 12px;
+        color: rgb(96, 96, 96);
+      }
+
+      .video-author{
+        margin-bottom: 4px;
+      }
+
+      .channel-picture{
+        display: inline-block;
+        width: 50px;
+        vertical-align: top;
+      }
+
+      .video-info{
+        display: inline-block;
+        width: 200px;
+      }
+
+      .profile-picture{
+        width: 40px;
+        border-radius: 40px;
+      }
+
+      .thumbnail-row{
+        margin-bottom: 12px;
       }
     </style>
   </head>
@@ -34,33 +71,51 @@
     <input class="search-bar" type="text" placeholder="search">
     <!--creating a container i.e basically a div-->
     <div class="video-preview">
-      <!--image is also a void element which mean sit doesn't require a closing tag-->
-      <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
-      <!--unlike para, image and search bar appers on the same line(beside image) where para are on top of each other this is because of a block element - which takes up a entire line-->
-      <!--another is inline-block element which is image and input, take space as much required not entire line-->
-      <!--3rd is inline element whic exists within the line, like <strong>elemnt which makes word bold within line-->
-      <!--we use display in css to switch between block and inline block-->
-      <p class="video-title">
-        Talking Tech and AI with Google CEO Sundar Pichai!
-      </p>
-      <p class="video-author">
-        Marques Brownlee
-      </p>
-      <p class="video-stats">
-        3.4M views &#183; 6 months ago
-      </p>
+      <div class="thumbnail-row">
+        <!--image is also a void element which mean sit doesn't require a closing tag-->
+        <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+      </div>
+      <div>
+        <!--unlike para, image and search bar appers on the same line(beside image) where para are on top of each other this is because of a block element - which takes up a entire line-->
+        <!--another is inline-block element which is image and input, take space as much required not entire line-->
+        <!--3rd is inline element whic exists within the line, like <strong>elemnt which makes word bold within line-->
+        <!--we use display in css to switch between block and inline block-->
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pictures/channel-1.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Talking Tech and AI with Google CEO Sundar Pichai!
+          </p>
+          <p class="video-author">
+          Marques Brownlee
+          </p>
+          <p class="video-stats">
+            3.4M views &#183; 6 months ago
+          </p>
+        </div>
+      </div>
     </div>
     <div class="video-preview">
-      <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
-      <p class="video-title">
-        Try Not To Laugh Challenge #9
-      </p>
-      <p class="video-author">
-        Markiplier
-      </p>
-      <p class="video-stats">
-        19M views &#183; 4 years ago
-      </p>
+      <div class="thumbnail-row">
+        <img class="thumbnail" src="thumbnails/thumbnail-2.webp">
+      </div>
+      <div>
+        <div class="channel-picture">
+          <img class="profile-picture" src="channel-pictures/channel-2.jpeg">
+        </div>
+        <div class="video-info">
+          <p class="video-title">
+            Try Not To Laugh Challenge #9
+          </p>
+          <p class="video-author">
+            Markiplier
+          </p>
+          <p class="video-stats">
+            19M views &#183; 4 years ago
+          </p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
