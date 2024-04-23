@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube.com clone</title>
+    <style>
+      .thumbnail{
+        width: 300px;
+        display: block;
+      }
+
+      .search-bar{
+        font-size: 20px;
+        margin-left: 12px ;
+      }
+
+      .video-title{
+        width: 300px;
+      }
+
+      .video-author,
+      .video-stats{
+        
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--creating a search bar and putting a placeholder search-->
+    <input class="search-bar" type="text" placeholder="search">
+    <!--image is also a void element which mean sit doesn't require a closing tag-->
+    <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+    <!--unlike para, image and search bar appers on the same line(beside image) where para are on top of each other this is because of a block element - which takes up a entire line-->
+    <!--another is inline-block element which is image and input, take space as much required not entire line-->
+    <!--3rd is inline element whic exists within the line, like <strong>elemnt which makes word bold within line-->
+    <!--we use display in css to switch between block and inline block-->
+    <p class="video-title">
+      Talking Tech and AI with Google CEO Sundar Pichai!
+    </p>
+    <p class="video-author">
+      Marques Brownlee
+    </p>
+    <p class="video-stats">
+      3.4M views &#183; 6 months ago
+    </p>
+
+    <div>
+      this is a div
+    </div>
+  </body>
+</html>
+
+<!--div stand for division, which is basically a box-->
