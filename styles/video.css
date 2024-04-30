@@ -46,8 +46,13 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+@media(min-width:750px) and (max-width:1000px){
+  .video-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
-@media (mide-width: 100px){
+@media (mide-width: 1000px){
   .video-grid{
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -57,10 +62,7 @@
   font-family: Roboto, Arial;
   font-size: 12px;
   font-weight: 500;
-  padding-left: 4px;
-  padding-right: 4px;
-  padding-top: 4px;
-  padding-bottom: 4px;
+  padding: 4px;
   border-radius: 2px;
   background-color: black;
   color: white;
